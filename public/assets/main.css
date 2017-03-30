@@ -1,0 +1,50 @@
+#page{
+    text-align: center;
+}
+
+#msg{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+#msgTxt{
+    border: 1px solid #ccc;
+}
+#msgContent:after{
+    content: '';
+    display: block;
+    height: 90px;
+}
+#msgContent li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+#msgContent li .user-avt{
+    display: inline-block;
+    height: 25px;
+    padding-right:20px;
+}
+.user-avt img{
+    min-width: 20px;
+    height: 100%;
+}
+.user-avt a{
+    color: #666;
+}
+.user-avt a:hover{
+    cursor: pointer;
+}
+.user-avt a:after{
+    content: attr(title);
+    font-size: 12px;
+}
+#msgContent li time{
+    float: right;
+    font-size: 12px;
+    color: #999;
+    text-decoration: underline;
+}
